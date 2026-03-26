@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Toomy AI</title>
+<style>
+body { font-family: Arial; text-align: center; background: #0b1d3a; color: white; }
+input { padding: 10px; width: 60%; }
+button { padding: 10px; }
+#response { margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<h1>🤖 Toomy AI</h1>
+
+<input id="userInput" placeholder="اكتب سؤالك هنا">
+<button onclick="sendMessage()">إرسال</button>
+
+<div id="response"></div>
+
+<script>
+async function sendMessage() {
+  const input = document.getElementById("userInput").value;
+  document.getElementById("response").innerText = "جارٍ إرسال السؤال...";
+}
+</script>
+
+</body>
+</html>
